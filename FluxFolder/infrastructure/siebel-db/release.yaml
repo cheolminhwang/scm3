@@ -1,0 +1,24 @@
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: siebel-db
+spec:
+  releaseName: database
+  chart:
+    spec:
+      chart: ./siebel-db
+      sourceRef:
+        kind: GitRepository
+        name: siebel-repo
+        namespace: config-scmvanilla-z6w8eq
+  interval: 10m
+  install:
+    timeout: 30m
+  uninstall:
+    timeout: 30m
+  values:
+    image:
+      dataTag: 25.6
+    storage: 
+      nfsServer: siebelmount.cmpri.siebelcm.oraclevcn.com
+      nfsPath: siebfs
