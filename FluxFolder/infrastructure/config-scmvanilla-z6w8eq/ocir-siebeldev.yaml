@@ -1,9 +1,0 @@
-apiVersion: v1
-data:
-  .dockerconfigjson: eyJhdXRocyI6eyJwaHgub2Npci5pbyI6eyJ1c2VybmFtZSI6InNpZWJlbGRldi9jbS1wdWxsLXVzZXIiLCJwYXNzd29yZCI6IkddWE9Lb28oXHUwMDNlczJjdG1QLUMxd2EiLCJlbWFpbCI6InNpZWJlbEBvcmFjbGUuY29tIiwiYXV0aCI6ImMybGxZbVZzWkdWMkwyTnRMWEIxYkd3dGRYTmxjanBIWFZoUFMyOXZLRDV6TW1OMGJWQXRRekYzWVE9PSJ9fX0=
-kind: Secret
-metadata:
-  creationTimestamp: null
-  name: ocirsecret
-  namespace: config-scmvanilla-z6w8eq
-type: kubernetes.io/dockerconfigjson
